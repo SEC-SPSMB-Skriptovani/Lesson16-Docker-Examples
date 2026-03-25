@@ -5,7 +5,7 @@ docker run -d \
   -e PGID=1000 \
   -e TZ=Etc/UTC \
   -e VERSION=docker \
-  -e PLEX_CLAIM= `#optional` \
+  -p 32400:32400 \
   -v /home/student/plex/config:/config \
   -v /home/student/plex/tvseries:/tv \
   -v //home/student/plex/movies:/movies \
